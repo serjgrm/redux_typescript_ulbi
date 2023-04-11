@@ -6,5 +6,8 @@ import { combineReducers } from "redux";
 
 
 export const rootReducer = combineReducers({
-    user: useReducer,
+    user: useReducer
 }) 
+
+
+export type RootState = ReturnType<typeof rootReducer>
